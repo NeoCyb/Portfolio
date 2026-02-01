@@ -348,29 +348,29 @@
     }
     /* Desktop: give hero-visual a fixed min size so floating cards have clear corners (no overlap) */
     @media (min-width: 901px) {
-      .hero-visual {
+      .img-visual {
         min-width: 380px;
         min-height: 380px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
-      .hero-avatar-wrap {
+      .img-avatar-wrap {
         position: relative;
         z-index: 1;
       }
     }
     @media (max-width: 900px) {
-      .hero-visual { order: -1; }
+      .img-visual { order: -1; }
     }
     /* 3D avatar – perspective & tilt */
-    .hero-avatar-wrap {
+    .img-avatar-wrap {
       perspective: 1000px;
       margin: 0 auto;
       width: min(280px, 75vw);
       max-width: 280px;
     }
-    .hero-avatar {
+    .img-avatar {
       position: relative;
       width: 100%;
       aspect-ratio: 1;
@@ -393,10 +393,10 @@
       transition: transform 0.15s ease-out;
       will-change: transform;
     }
-    .hero-avatar span {
+    .img-avatar span {
       opacity: 0.9;
     }
-    .hero-avatar img {
+    .img-avatar img {
       position: absolute;
       inset: 0;
       width: 100%;
